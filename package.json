@@ -1,0 +1,19 @@
+{
+  "name": "iblog",
+  "version": "1.0.0",
+  "description": "个人博客",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brickerxu/iBlog.git"
+  },
+  "author": "bricker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brickerxu/iBlog/issues"
+  },
+  "homepage": "https://github.com/brickerxu/iBlog#readme"
+}
