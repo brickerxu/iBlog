@@ -8,8 +8,18 @@ const devConfig = {
     devServer: {
         contentBase: "./dist",
         port: 8081,
-        open: true,
         hot: true
+    },
+    module: {
+        rules: [
+            {
+                test: /\.styl(us)?$/,
+                use: ['style-loader', 'css-loader', 'stylus-loader']
+            }, {
+                test: /\.css?$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()

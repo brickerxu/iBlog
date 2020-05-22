@@ -21,6 +21,13 @@ module.exports = {
             {
                 test: /\.vue$/,
                 loader: 'vue-loader'
+            }, {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
+            }, {
+                test: /\.(woff|ttf)$/,
+                loader: 'url-loader'
             }
         ]
     },
@@ -34,7 +41,7 @@ module.exports = {
                 title: route.title,
                 filename: route.name + '.html',
                 route: route,
-                chunks: ['common', route.name]
+                chunks: route.name
             });
         })
     ),

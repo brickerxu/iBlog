@@ -2,10 +2,9 @@ import Vue from 'vue';
 
 import App from '../views/index.vue';
 
+import '../styles/global.styl';
+
 new Vue({
     el: "#app",
-    components:{
-        App
-    },
-    template: '<App />'
+    render: h => h(App)
 });
