@@ -1,8 +1,9 @@
 <template>
     <div>
-        
         <navigation />
-        {{chrenild}}
+        <div class="content">
+            <slot></slot>
+        </div>
     </div>
 </template>
 
@@ -13,9 +14,11 @@
         name: 'Global',
         components: {
             navigation: Navigation
-        },
-        props: {
-            chrenild: Node
         }
     }
 </script>
+
+<style lang="stylus" scoped>
+    .content
+        padding-top 64px
+</style>
