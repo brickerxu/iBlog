@@ -41,7 +41,8 @@ module.exports = {
                 title: route.title,
                 filename: route.name + '.html',
                 route: route,
-                chunks: route.name
+                chunks: [route.name],
+                minify: false
             });
         })
     ),

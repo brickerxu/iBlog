@@ -1,9 +1,15 @@
 <template>
-    <div>This is my Blog</div>
+    <global>
+        
+    </global>
 </template>
 
 <script>
-export default {
-    name: 'Index'
-}
+    import Global from '../components/pages/global.vue';
+    export default {
+        name: 'Index',
+        components: {
+            global: Global
+        }
+    }
 </script>
