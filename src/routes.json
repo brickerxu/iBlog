@@ -2,5 +2,8 @@
     {
         "name": "index",
         "title": "首页"
+    }, {
+        "name": "about",
+        "title": "关于"
     }
 ]

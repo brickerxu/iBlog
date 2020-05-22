@@ -34,6 +34,18 @@ const devConfig = {
             }
         ]
     },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    name: 'commons' ,  // 提取出来的文件命名
+                    chunks: 'initial',   // initial表示提取入口文件的公共css及js部分
+                    minChunks: 2, // 表示提取公共部分最少的文件数
+                    minSize: 200  // 表示提取公共部分最小的大小 
+                }
+            }
+        }
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
