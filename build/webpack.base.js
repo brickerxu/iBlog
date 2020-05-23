@@ -1,6 +1,7 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const routes = require('../src/routes.json');
 
@@ -32,7 +33,12 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'static', to: 'static' }
+              ]
+        })
     ].concat(
         routes.map(route => {
             return new HtmlWebpackPlugin({

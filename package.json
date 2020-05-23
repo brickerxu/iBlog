@@ -19,13 +19,15 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-fragment": "^1.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.1",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",

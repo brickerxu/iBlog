@@ -1,7 +1,7 @@
 <template>
-    <global>
+    <global-page>
         <p>这是Content</p>
-    </global>
+    </global-page>
 </template>
 
 <script>
@@ -9,7 +9,7 @@
     export default {
         name: 'Index',
         components: {
-            global: Global
+            globalPage: Global
         }
     }
 </script>
