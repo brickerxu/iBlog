@@ -1,23 +1,24 @@
 <template>
-    <fragment>
+    <empty>
         <div class="header">
             <navigation />
         </div>
         <div class="content">
             <slot></slot>
         </div>
-    </fragment>
+    </empty>
 </template>
 
 <script>
-    import Navigation from '../navigation/navigation.vue';
-    import '../../styles/global.styl';
-    export default {
-        name: 'Global',
-        components: {
-            navigation: Navigation
-        }
+import Empty from './empty.vue';
+import Navigation from '../navigation/navigation.vue';
+export default {
+    name: 'Global',
+    components: {
+        empty: Empty,
+        navigation: Navigation
     }
+}
 </script>
 
 <style lang="stylus" scoped>

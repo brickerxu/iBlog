@@ -1,9 +1,15 @@
 <template>
-    <div>About my Blog</div>
+    <global-page>
+        <p>About my Blog</p>
+    </global-page>
 </template>
 
 <script>
+import Global from '../components/pages/global.vue';
 export default {
-    name: 'About'
+    name: 'About',
+    components: {
+        globalPage: Global
+    }
 }
 </script>

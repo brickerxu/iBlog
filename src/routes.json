@@ -5,5 +5,8 @@
     }, {
         "name": "about",
         "title": "关于"
+    }, {
+        "name": "login",
+        "title": "登录"
     }
 ]
