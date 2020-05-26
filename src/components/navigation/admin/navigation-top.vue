@@ -1,40 +1,28 @@
 <template>
-  <div class="navigation">
-    <div class="logo-box">
-      <img src="/static/logo.png">
-      <div class="name">博客管理后台</div>
-    </div>
-    <div class="user_box">
+<base-navigation>
+    <span slot="name">博客管理后台</span>
+    <div slot="right" class="user_box">
         <div class="headimg_box">
             <img src="/static/logo.png">
         </div>
-        <div><el-button type="text">退出</el-button></div>
+        <div>
+            <el-button type="text">退出</el-button>
+        </div>
     </div>
-  </div>
+</base-navigation>
 </template>
 
 <script>
-  export default {
+import BaseNavigation from '../base-navigation.vue';
+export default {
     name: "Navigation",
-  };
+    components: {
+        BaseNavigation
+    }
+};
 </script>
 
 <style lang="stylus" scoped>
-@import '../../../styles/global.styl';
-.navigation
-    border-bottom .5px solid #9c9c9c
-    height 64px
-    font-size 20px
-    background-color $theme-colour
-    color #ffffff
-    padding 0 $padding-left-right
-    display flex
-    justify-content space-between
-.logo-box
-    height 65px
-    display flex
-    .name
-      margin auto 1rem
 .user_box
     margin auto 0
     display flex
