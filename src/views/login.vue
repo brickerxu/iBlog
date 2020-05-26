@@ -73,7 +73,7 @@ export default {
                 border-radius 50%
         .form_box
             position absolute
-            top 25%
+            top 20%
             padding 20px 25px
             div
             button

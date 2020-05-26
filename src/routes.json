@@ -1,12 +1,19 @@
 [
     {
         "name": "index",
-        "title": "首页"
+        "title": "首页",
+        "view": "index"
     }, {
         "name": "about",
-        "title": "关于"
+        "title": "关于",
+        "view": "about"
     }, {
         "name": "login",
-        "title": "登录"
+        "title": "登录",
+        "view": "login"
+    }, {
+        "name": "admin/index",
+        "title": "登录",
+        "view": "admin/index"
     }
 ]

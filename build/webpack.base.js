@@ -8,7 +8,7 @@ const routes = require('../src/routes.json');
 let entry = {}
 
 routes.map(route => {
-    entry[route.name] = path.resolve(__dirname, `../src/entry/${route.name}.js`)
+    entry[route.name] = path.resolve(__dirname, `../src/entry/${route.view}.js`)
 });
 
 module.exports = {
