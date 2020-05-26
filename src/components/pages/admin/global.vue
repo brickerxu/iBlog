@@ -4,7 +4,12 @@
             <navigation-top />
         </div>
         <div class="content">
-            <slot></slot>
+            <div class="left">
+                <navigation-left />
+            </div>
+            <div class="right">
+                <slot></slot>
+            </div>
         </div>
     </empty>
 </template>
@@ -12,11 +17,13 @@
 <script>
 import Empty from '../empty.vue';
 import NavigationTop from '../../navigation/admin/navigation-top.vue';
+import NavigationLeft from '../../navigation/admin/navigation-left.vue';
 export default {
     name: 'Global',
     components: {
         Empty,
-        NavigationTop
+        NavigationTop,
+        NavigationLeft
     }
 }
 </script>
@@ -28,5 +35,8 @@ export default {
         width 100%
         z-index 1
     .content
-        padding 64px $padding-left-right 0 $padding-left-right
+        display flex
+        padding-top 64px
+    .right
+        margin-left 150px
 </style>

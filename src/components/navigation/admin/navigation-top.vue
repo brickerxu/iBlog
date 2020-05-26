@@ -15,7 +15,7 @@
 <script>
 import BaseNavigation from '../base-navigation.vue';
 export default {
-    name: "Navigation",
+    name: "NavigationTop",
     components: {
         BaseNavigation
     }

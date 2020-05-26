@@ -1,6 +1,6 @@
 <template>
 <global>
-    
+    <p>这里是正文</p>
 </global>
 </template>
 
