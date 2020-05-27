@@ -1,7 +1,7 @@
 <template>
 <div class="navigation">
     <ul class="menu">
-        <li v-for="(item, index) in menu" :key="index" class="menu-item">
+        <li v-for="(item, index) in menu" :key="index" class="menu-item" v-on:click="clickMenu(item)">
             <div class="menu-title">
                 <i v-if="item.icon" :class="item.icon"></i>
                 <span>{{item.text}}</span>
@@ -23,9 +23,11 @@
         return {
             menu: [
                 {
+                    key: "article",
                     text: "文章管理",
                     icon: "el-icon-collection"
                 }, {
+                    key: "type",
                     text: "类别管理",
                     icon: "el-icon-menu",
                     sub: [
@@ -36,13 +38,21 @@
                         }
                     ]
                 }, {
+                    key: "resource",
                     text: "资源管理",
                     icon: "el-icon-files"
                 }, {
+                    // 前台导航管理
+                    key: "navigation", 
                     text: "导航管理",
                     icon: "el-icon-s-grid"
                 }
             ]
+        }
+    },
+    methods: {
+        clickMenu: item => {
+            alert(JSON.stringify(item))
         }
     }
   };

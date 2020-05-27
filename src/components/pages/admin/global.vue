@@ -36,7 +36,11 @@ export default {
         z-index 1
     .content
         display flex
-        padding-top 64px
+        top 64px
+        position fixed
+        height calc(100% - 96px)
+        width 100%
     .right
         margin-left 150px
+        width 100%
 </style>
